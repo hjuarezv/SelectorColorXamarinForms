@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectorColor.Android", "SelectorColor\SelectorColor.Android\SelectorColor.Android.csproj", "{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectorColor", "SelectorColor\SelectorColor\SelectorColor.csproj", "{C013D20A-7663-430D-B1DA-CA619D0E9F37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6F95D2-7038-4A7F-ACC6-5648779BEB9D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C013D20A-7663-430D-B1DA-CA619D0E9F37}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {839C84B3-1487-4B07-BAE7-4657C022B579}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SelectorColor.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="estilo1">                
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
+            </Style>
+            <Style TargetType="Slider">
+                <Setter Property="Minimum" Value="0"></Setter>
+                <Setter Property="Maximum" Value="255"></Setter>
+                <Setter Property="MaximumTrackColor" Value="White"></Setter>
+            </Style>
+            <Color x:Key="Lila">#742DA3</Color>
+            <Color x:Key="Rojo">#FF0000</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <BoxView x:Name="boxColor" BackgroundColor="Black" HeightRequest="200"></BoxView>
+        <Grid RowSpacing="10" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+                <ColumnDefinition Width=".8*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="Rojo (R):" Grid.Column="0" Grid.Row="0" BackgroundColor="{StaticResource Lila}"
+                   />
+            <Label Text="Verde(G):" Grid.Column="0" Grid.Row="1"
+                   />
+            <Label Text="Azul (B):" Grid.Column="0" Grid.Row="2"
+                   />
+            <Slider Grid.Column="1" Grid.Row="0" MinimumTrackColor="{StaticResource Rojo}" 
+                    ThumbColor="Red" 
+                    x:Name="sliderRojo" ValueChanged="MostrarColor"
+                    />
+            <Slider Grid.Column="1" Grid.Row="1" MinimumTrackColor="Green" 
+                    ThumbColor="Green" ValueChanged="MostrarColor"
+                    x:Name="sliderVerde"/>
+            <Slider Grid.Column="1" Grid.Row="2" MinimumTrackColor="Blue" 
+                    ThumbColor="Blue" ValueChanged="MostrarColor"
+                    x:Name="sliderAzul"
+                    />
+        </Grid>
+        <Label Text="Color en Hex: " HorizontalOptions="Center" Style="{StaticResource estilo1}"
+               x:Name="lblColor"/>
+    </StackLayout>
+
+</ContentPage>
